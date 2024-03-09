@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixApi", "PixApi\PixApi.csproj", "{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixApi", "PixApi\PixApi.csproj", "{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{7D0E4150-160A-40E0-BE90-246A5E4CC58A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E760AD5-7D76-49BE-A6D7-0587CE7C566A} = {7D0E4150-160A-40E0-BE90-246A5E4CC58A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B71DF34E-F7FC-41C3-98DF-D179BA49DC2D}

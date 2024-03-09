@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}|Tests\\Tests.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}|Tests\\Tests.csproj|solutionrelative:tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\repositories\\keyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\repositories\\keyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}|Tests\\Tests.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\tests\\helper\\mockdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E760AD5-7D76-49BE-A6D7-0587CE7C566A}|Tests\\Tests.csproj|solutionrelative:tests\\helper\\mockdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\models\\clientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\models\\clientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "PixApi\\Repositories\\ClientRepository.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "PixApi\\Repositories\\ClientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T23:34:03.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientModel.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Models\\ClientModel.cs",
+              "RelativeDocumentMoniker": "PixApi\\Models\\ClientModel.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Models\\ClientModel.cs",
+              "RelativeToolTip": "PixApi\\Models\\ClientModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T23:27:20.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KeyRepository.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Repositories\\KeyRepository.cs",
+              "RelativeDocumentMoniker": "PixApi\\Repositories\\KeyRepository.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Repositories\\KeyRepository.cs",
+              "RelativeToolTip": "PixApi\\Repositories\\KeyRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:58:51.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MockDb.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\Tests\\Helper\\MockDb.cs",
+              "RelativeDocumentMoniker": "Tests\\Helper\\MockDb.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\Tests\\Helper\\MockDb.cs",
+              "RelativeToolTip": "Tests\\Helper\\MockDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:40:29.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Tests\\UnitTest1.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\Tests\\UnitTest1.cs",
+              "RelativeToolTip": "Tests\\UnitTest1.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:37:15.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiDbContext.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Data\\ApiDbContext.cs",
+              "RelativeDocumentMoniker": "PixApi\\Data\\ApiDbContext.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Data\\ApiDbContext.cs",
+              "RelativeToolTip": "PixApi\\Data\\ApiDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T19:19:21.066Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
