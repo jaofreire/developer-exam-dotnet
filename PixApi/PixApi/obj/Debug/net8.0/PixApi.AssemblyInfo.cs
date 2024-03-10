@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PixApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+990a684b9b60334d3d4eafdf2d933383b656d14f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6b282dcd9e669e747445ce59fd735fb9587a834")]
 [assembly: System.Reflection.AssemblyProductAttribute("PixApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PixApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
