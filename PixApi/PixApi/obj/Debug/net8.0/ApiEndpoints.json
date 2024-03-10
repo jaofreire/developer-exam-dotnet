@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "ContainingType": "PixApi.Controllers.ClientController",
+    "Method": "RegisterNewClient",
+    "RelativePath": "client/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientModel",
+        "Type": "PixApi.Models.ClientModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PixApi.Models.ClientModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PixApi.Controllers.KeyController",
+    "Method": "RegisterNewKey",
+    "RelativePath": "key/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newKey",
+        "Type": "PixApi.Models.KeyModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PixApi.Models.KeyModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

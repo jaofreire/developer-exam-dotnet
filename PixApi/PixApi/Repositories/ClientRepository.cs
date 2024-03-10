@@ -1,14 +1,22 @@
 ﻿using PixApi.Data;
 using PixApi.Models;
+using PixApi.Repositories.Interface;
 
 namespace PixApi.Repositories
 {
-    public class ClientRepository
+    public class ClientRepository : IClientRepository
     {
-        public static async Task<ClientModel> AddClient(ApiDbContext db, ClientModel newClient)
+        private readonly ApiDbContext _context;
+
+        public ClientRepository(ApiDbContext context)
         {
-            await db.Clients.AddAsync(newClient);
-            await db.SaveChangesAsync();
+            _context = context;
+        }
+
+        public async Task<ClientModel> AddClient( ClientModel newClient)
+        {
+            await _context.Clients.AddAsync(newClient);
+            await _context.SaveChangesAsync();
 
             return newClient;
         }

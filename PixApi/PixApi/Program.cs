@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using PixApi.Data;
+using PixApi.Repositories;
+using PixApi.Repositories.Interface;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,7 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddEntityFrameworkSqlServer().AddDbContext<ApiDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DataBaseSql"));
+});
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IKeyRepository, KeyRepository>();
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
 
 var app = builder.Build();
 
