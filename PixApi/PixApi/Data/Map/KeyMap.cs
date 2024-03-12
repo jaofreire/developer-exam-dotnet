@@ -9,9 +9,14 @@ namespace PixApi.Data.Map
         public void Configure(EntityTypeBuilder<KeyModel> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.Property(x => x.ClientId);
             builder.Property(x => x.TypeKey).IsRequired();
             builder.Property(x => x.Key).IsRequired();
+            
+
+           
+
+
+     
         }
     }
 }

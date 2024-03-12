@@ -10,9 +10,11 @@ namespace PixApi.Data.Map
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).IsRequired();
-            builder.Property(x => x.KeysId);
+            builder.Property(x => x.ClientKeyId);
 
-            builder.HasOne(x => x.Key) ;
+            builder.HasOne(x => x.Key).WithMany().HasForeignKey(x => x.ClientKeyId)
+                .IsRequired(false).OnDelete(DeleteBehavior.Restrict);
+
         }
     }
 }

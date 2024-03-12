@@ -5,7 +5,7 @@
 namespace PixApi.Migrations
 {
     /// <inheritdoc />
-    public partial class InitalMigration : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -48,22 +48,23 @@ namespace PixApi.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    KeyId = table.Column<int>(type: "int", nullable: true)
+                    ClientKeyId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Clients", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Clients_Keys_KeyId",
-                        column: x => x.KeyId,
+                        name: "FK_Clients_Keys_ClientKeyId",
+                        column: x => x.ClientKeyId,
                         principalTable: "Keys",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Clients_KeyId",
+                name: "IX_Clients_ClientKeyId",
                 table: "Clients",
-                column: "KeyId");
+                column: "ClientKeyId");
         }
 
         /// <inheritdoc />

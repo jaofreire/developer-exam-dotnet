@@ -30,7 +30,7 @@ namespace Tests
             {
                 Id = clientId,
                 Name = name,
-                Key = KeyPix
+                //Key = KeyPix
             };
 
             await using var context = new MockDb().CreateDbContext();

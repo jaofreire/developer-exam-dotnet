@@ -16,7 +16,11 @@ namespace PixApi.Repositories
 
         public async Task<KeyModel> AddKey( KeyModel newKey)
         {
-            newKey.ClientId = 0;
+
+            var getEqualKey = await _context.Keys.FirstOrDefaultAsync(x => x.Key == newKey.Key);
+
+            if (getEqualKey != null)
+                throw new Exception("Other key have this value, try other value");
 
             await _context.Keys.AddAsync(newKey);
             await _context.SaveChangesAsync();
@@ -44,17 +48,15 @@ namespace PixApi.Repositories
             return keyGet;
         }
 
-        public async Task<List<KeyModel>> GetKeyByClientID(int clientId)
-        {
-            var keyGet = await _context.Keys.Where(x => x.ClientId == clientId).ToListAsync() ??
-               throw new Exception("Key not found");
-            return keyGet;
-        }
-
         public async Task<KeyModel> UpdateKey(KeyModel keyUpdate, int id)
         {
             var keyGet = await _context.Keys.FindAsync(id) ??
                 throw new Exception("Key not found");
+
+            var getEqualKey = await _context.Keys.FirstOrDefaultAsync(x => x.Key == keyUpdate.Key);
+
+            if (getEqualKey != null)
+                throw new Exception("Other key have this value, try other value");
 
             keyGet.TypeKey = keyUpdate.TypeKey;
             keyGet.Key = keyUpdate.Key;
@@ -70,6 +72,11 @@ namespace PixApi.Repositories
             var keyGet = await _context.Keys.FindAsync(id) ??
                throw new Exception("Key not found");
 
+            var getEqualKey = await _context.Keys.FirstOrDefaultAsync(x => x.Key == newKey);
+
+            if (getEqualKey != null)
+                throw new Exception("Other key have this value, try other value");
+
             keyGet.Key = newKey;
 
             _context.Keys.Update(keyGet);
@@ -84,15 +91,14 @@ namespace PixApi.Repositories
             var keyGet = await _context.Keys.FindAsync(id) ??
               throw new Exception("Key not found");
 
-            if (keyGet.ClientId != 0)
+            var client = await _context.Clients.FirstOrDefaultAsync(x => x.ClientKeyId == id);
+
+            if (client != null)
             {
-                var client = await _context.Clients.FindAsync(keyGet.ClientId);
-                client.Key = null;
+                client.ClientKeyId = null;
 
-                _context.Keys.Remove(keyGet);
+                _context.Update(client);
                 await _context.SaveChangesAsync();
-
-                return true;
             }
 
             _context.Keys.Remove(keyGet);

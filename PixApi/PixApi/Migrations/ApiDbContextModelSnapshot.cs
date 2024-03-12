@@ -30,10 +30,7 @@ namespace PixApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("KeyId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("KeysId")
+                    b.Property<int?>("ClientKeyId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -42,7 +39,7 @@ namespace PixApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("KeyId");
+                    b.HasIndex("ClientKeyId");
 
                     b.ToTable("Clients");
                 });
@@ -54,9 +51,6 @@ namespace PixApi.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ClientId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Key")
                         .IsRequired()
@@ -107,7 +101,8 @@ namespace PixApi.Migrations
                 {
                     b.HasOne("PixApi.Models.KeyModel", "Key")
                         .WithMany()
-                        .HasForeignKey("KeyId");
+                        .HasForeignKey("ClientKeyId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Key");
                 });

@@ -17,14 +17,6 @@ namespace PixApi.Repositories
 
         public async Task<ClientModel> AddClient( ClientModel newClient)
         {
-            if (newClient.Key != null)
-            {
-                newClient.Key.ClientId = newClient.Id;
-                //newClient.Key.Id = newClient.KeysId;
-            }
-
-            newClient.Key.Id = newClient.KeysId;
-
             await _context.Clients.AddAsync(newClient);
             await _context.SaveChangesAsync();
 
@@ -33,12 +25,12 @@ namespace PixApi.Repositories
 
         public async Task<List<ClientModel>> GetAllClients()
         {
-            return await _context.Clients.ToListAsync();
+            return await _context.Clients.Include(x => x.Key).ToListAsync();
         }
 
         public async Task<List<ClientModel>> GetClientsByName(string name)
         {
-            var clients = await _context.Clients.Where(x => x.Name == name).ToListAsync() ??
+            var clients = await _context.Clients.Include(x => x.Key).Where(x => x.Name == name).ToListAsync() ??
                 throw new Exception("Client not found");
 
             return clients;
@@ -50,7 +42,6 @@ namespace PixApi.Repositories
                 throw new Exception("Client Not found");
 
             clients.Name = newClient.Name;
-            clients.Key = newClient.Key;
 
             _context.Clients.Update(clients);
             await _context.SaveChangesAsync();
@@ -64,13 +55,15 @@ namespace PixApi.Repositories
             var clients = await _context.Clients.FindAsync(id) ??
                 throw new Exception("Client Not found");
 
-            if (clients.Key == null)
-            {
+            List<ClientModel> clientList = _context.Clients.Where(x => x.ClientKeyId == keyId).ToList();
 
+            if (clientList.Any())
+            {
+                throw new Exception("This key its associate in the other one Client ");
             }
 
-            clients.Key.Id = keyId;
-
+            clients.ClientKeyId = keyId;
+            
             _context.Clients.Update(clients);
             await _context.SaveChangesAsync();
 

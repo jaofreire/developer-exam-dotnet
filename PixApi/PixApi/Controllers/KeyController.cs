@@ -43,12 +43,6 @@ namespace PixApi.Controllers
             return await _keyRepository.GetKeyByType(type);
         }
 
-        [HttpGet("/key/byClientId/{clientId}")]
-        public async Task<ActionResult<List<KeyModel>>> GetByClientID(int clientId)
-        {
-            return await _keyRepository.GetKeyByClientID(clientId);
-        }
-
         [HttpPut("/key/update/{id}")]
         public async Task<ActionResult<KeyModel>> Update(int id, KeyModel keyUpdate)
         {
