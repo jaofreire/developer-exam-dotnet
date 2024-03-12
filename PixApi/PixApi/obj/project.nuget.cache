@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7oXyokRqG37v0HPyO/OQzVBaWT5+MNwWiwUCjHKSZWqwb5g4wIa8wwIjSVhOkrnLnSz/FnlyDak3T19vpPdqMA==",
+  "dgSpecHash": "sezCQJaAVqvaTp3pyaazj/YzcC3Lnu9HKQ0Sq/S2eCwJNm2g9tIHmJUGV5BHeb0KY1dnyjQCbSC4xAXw0yznwQ==",
   "success": true,
   "projectFilePath": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\PixApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

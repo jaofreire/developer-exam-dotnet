@@ -26,6 +26,114 @@
     ]
   },
   {
+    "ContainingType": "PixApi.Controllers.TransitionController",
+    "Method": "GetAll",
+    "RelativePath": "api/Transition/transition/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PixApi.Models.Transition, PixApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PixApi.Controllers.TransitionController",
+    "Method": "GetById",
+    "RelativePath": "api/Transition/transition/getById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PixApi.Models.Transition",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PixApi.Controllers.TransitionController",
+    "Method": "GetByKey",
+    "RelativePath": "api/Transition/transition/getByKey/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PixApi.Models.Transition, PixApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PixApi.Controllers.TransitionController",
+    "Method": "RegisterNewTransition",
+    "RelativePath": "api/Transition/transition/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "issuerKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "receiverKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "depositvalue",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PixApi.Models.Transition",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PixApi.Controllers.ClientController",
     "Method": "GetAll",
     "RelativePath": "client/getAll",
