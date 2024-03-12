@@ -1,7 +1,10 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using PixApi.Data;
+using PixApi.Models;
 using PixApi.Repositories;
 using PixApi.Repositories.Interface;
+using PixApi.Validations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +22,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IKeyRepository, KeyRepository>();
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<ITransitionRepository, TransitionRepository>();
+
+builder.Services.AddSingleton<IValidator<KeyModel>, KeyValidations>();
 
 var app = builder.Build();
 

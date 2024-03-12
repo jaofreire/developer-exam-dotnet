@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\repositories\\keyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\repositories\\keyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\controllers\\keycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\controllers\\keycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|e:\\estudo c#\\examdotnetrepository\\developer-exam-dotnet\\pixapi\\pixapi\\validations\\keyvalidations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF7264B0-F4E3-43EC-8D3B-D009CC252A32}|PixApi\\PixApi.csproj|solutionrelative:pixapi\\validations\\keyvalidations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +46,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Program.cs",
+              "RelativeDocumentMoniker": "PixApi\\Program.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Program.cs",
+              "RelativeToolTip": "PixApi\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T21:33:41.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KeyController.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Controllers\\KeyController.cs",
+              "RelativeDocumentMoniker": "PixApi\\Controllers\\KeyController.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Controllers\\KeyController.cs",
+              "RelativeToolTip": "PixApi\\Controllers\\KeyController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T21:20:16.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "KeyRepository.cs",
+              "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Repositories\\KeyRepository.cs",
+              "RelativeDocumentMoniker": "PixApi\\Repositories\\KeyRepository.cs",
+              "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Repositories\\KeyRepository.cs",
+              "RelativeToolTip": "PixApi\\Repositories\\KeyRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T21:05:55.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "KeyValidations.cs",
               "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Validations\\KeyValidations.cs",
               "RelativeDocumentMoniker": "PixApi\\Validations\\KeyValidations.cs",
               "ToolTip": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Validations\\KeyValidations.cs",
               "RelativeToolTip": "PixApi\\Validations\\KeyValidations.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBAAAACQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T18:59:57.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "TransitionController.cs",
               "DocumentMoniker": "E:\\estudo C#\\ExamDotnetRepository\\developer-exam-dotnet\\PixApi\\PixApi\\Controllers\\TransitionController.cs",
               "RelativeDocumentMoniker": "PixApi\\Controllers\\TransitionController.cs",

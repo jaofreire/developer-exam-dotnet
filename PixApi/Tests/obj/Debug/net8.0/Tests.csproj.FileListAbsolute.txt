@@ -149,3 +149,4 @@ E:\estudo C#\ExamDotnetRepository\developer-exam-dotnet\PixApi\Tests\obj\Debug\n
 E:\estudo C#\ExamDotnetRepository\developer-exam-dotnet\PixApi\Tests\obj\Debug\net8.0\Tests.pdb
 E:\estudo C#\ExamDotnetRepository\developer-exam-dotnet\PixApi\Tests\obj\Debug\net8.0\Tests.genruntimeconfig.cache
 E:\estudo C#\ExamDotnetRepository\developer-exam-dotnet\PixApi\Tests\obj\Debug\net8.0\ref\Tests.dll
+E:\estudo C#\ExamDotnetRepository\developer-exam-dotnet\PixApi\Tests\bin\Debug\net8.0\FluentValidation.dll

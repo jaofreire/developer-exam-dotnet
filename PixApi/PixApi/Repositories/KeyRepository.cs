@@ -1,13 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using PixApi.Data;
 using PixApi.Models;
 using PixApi.Repositories.Interface;
+
 
 namespace PixApi.Repositories
 {
     public class KeyRepository : IKeyRepository
     { 
         private readonly ApiDbContext _context;
+      
 
         public KeyRepository(ApiDbContext context)
         {
@@ -16,7 +19,7 @@ namespace PixApi.Repositories
 
         public async Task<KeyModel> AddKey( KeyModel newKey)
         {
-
+  
             var getEqualKey = await _context.Keys.FirstOrDefaultAsync(x => x.Key == newKey.Key);
 
             if (getEqualKey != null)
@@ -71,6 +74,7 @@ namespace PixApi.Repositories
         {
             var keyGet = await _context.Keys.FindAsync(id) ??
                throw new Exception("Key not found");
+
 
             var getEqualKey = await _context.Keys.FirstOrDefaultAsync(x => x.Key == newKey);
 

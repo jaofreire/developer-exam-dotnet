@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PixApi.Data;
 using PixApi.Models;
@@ -12,17 +13,24 @@ namespace PixApi.Controllers
     public class KeyController : ControllerBase
     {
         private readonly IKeyRepository _keyRepository;
- 
-        public KeyController(IKeyRepository keyRepository)
+        private readonly IValidator<KeyModel> _validator;
+
+        public KeyController(IKeyRepository keyRepository, IValidator<KeyModel> validator)
         {
-            _keyRepository = keyRepository ?? throw new ArgumentNullException(nameof(keyRepository)); ;
+            _keyRepository = keyRepository ?? throw new ArgumentNullException(nameof(keyRepository));
+            _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         [HttpPost("/key/register")]
-        public async Task<ActionResult<KeyModel>> RegisterNewKey(KeyModel newKey)
+        public async Task<IResult> RegisterNewKey(KeyModel newKey)
         {
+
+            var validation = await _validator.ValidateAsync(newKey);
+            if (!validation.IsValid) return Results.ValidationProblem(validation.ToDictionary());
+
             await _keyRepository.AddKey(newKey);
-            return newKey;
+            return Results.Ok(newKey);
+
         }
 
         [HttpGet("/key/getAll")]
@@ -44,10 +52,13 @@ namespace PixApi.Controllers
         }
 
         [HttpPut("/key/update/{id}")]
-        public async Task<ActionResult<KeyModel>> Update(int id, KeyModel keyUpdate)
+        public async Task<IResult> Update(int id, KeyModel keyUpdate)
         {
+            var validation = await _validator.ValidateAsync(keyUpdate);
+            if (!validation.IsValid) return Results.ValidationProblem(validation.ToDictionary());
+
             keyUpdate.Id = id;
-            return await _keyRepository.UpdateKey(keyUpdate, id);
+            return Results.Ok( await _keyRepository.UpdateKey(keyUpdate, id));
         }
 
         [HttpPatch("/key/updateKey/{id}")]
