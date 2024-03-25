@@ -19,15 +19,15 @@ Realize a search of transactions madeds with determinate Pix Key
 
 Base Url: https://localhost:7025/
 
-Client End Points:
+# Client End Points:
 
 Get - GetAll : /client/getAll;
 
 Get - GetByName: /client/getByName, 
- Parameters: string clientName;
+ Parameters: [string] clientName;
 
 Post - Regiter: /client/register,
- Parameters: ClientModel newCliente,
+ Parameters: [ClientModel] newCliente;
 
  Model:
 
@@ -44,6 +44,89 @@ Post - Regiter: /client/register,
 }
 </code>
   </pre>
+
+Put - UpdateClient: /client/update/{id},
+ Parameters: [ClientModel] model, [int] id;
+
+Put - UpdateClientKey: /client/updateKey/{id},
+ Parameters: [int] id, [int] KeyId;
+
+Delete - RemoveClient: /api/Client/client/remove/{id},
+ Parameters: [int] id;
+
+
+
+# Keys EndPoints:
+
+Get - GetAll: /key/getAll
+
+Get - GetKey: /key/getkey/{key},
+ Parameters: [string] key;
+
+Get - GetByType: /key/getByType/{type},
+ Parameters: [string] type;
+
+Post - Register: /key/register,
+ Parameters: [KeyModel] newKey;
+
+ Model:
+
+ <pre>
+<code >
+ {
+  "id": 0,
+  "typeKey": "string",
+  "key": "string"
+}
+</code>
+  </pre>
+
+Patch - UpdateKey: /key/updateKey/{id},
+ Parameters: [int] id, [string] newKey;
+
+Put - Update: /key/update/{id},
+ Parameters: [int] id, [KeyModel] model;
+
+Delete - RemoveKey: /key/remove/{id}, 
+ Parameters: [int] id;
+
+
+# Transactions EndPoints:
+
+Get - GetAll: /api/Transition/transition/getAll
+
+Get - GetById: /api/Transition/transition/getById/{id},
+ Parameters: [int] id
+
+Get - GetByKey: /api/Transition/transition/getByKey/{key},
+ Parameters: [string] Key;
+
+ Post - Register: /api/Transition/transition/register/,
+  Parameters: [string] issuerKey, [string] receiverKey, [double] depositvalue;
+
+ Model:
+
+<pre>
+ <code>
+ {
+  "id": 0,
+  "issuerClient": "string",
+  "issuerClientKey": "string",
+  "receiverClient": "string",
+  "receiverClientKey": "string",
+  "depositValue": 0
+}
+ </code>
+ </pre>
+
+
+
+
+
+
+ 
+
+
 
  
 
